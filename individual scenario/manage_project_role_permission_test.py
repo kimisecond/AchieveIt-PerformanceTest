@@ -88,18 +88,6 @@ class ManageProjectRolePermissionTest(TaskSet):
             "issue_tracker_modification",
             "issue_tracker_access"
         ]
-
-        # body_add_permission = {
-        #     "user_id": "SYKJ-20200201-0000",
-        #     "project_id": "2020-4577-D-01",
-        #     "privilege_list": [
-        #         "working_hour_modification",
-        #         "working_hour_access",
-        #         "working_hour_verification",
-        #         "issue_tracker_modification",
-        #         "issue_tracker_access"
-        #     ]
-        # }
         header = {'Cookie': 'JWT=' + self.jwt_token, 'Content-type': 'application/json'}
         print(json.dumps(body_add_permission))
         with self.client.put("/api/user/permission", json.dumps(body_add_permission), headers = header,
