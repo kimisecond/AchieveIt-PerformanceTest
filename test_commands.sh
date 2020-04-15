@@ -37,7 +37,7 @@ locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=volume_1 --ru
 locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=volume_2 --run-time 1h30m -c 500 -r 0.1 --step-load --step-clients 100 --step-time 15m
 locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=volume_3 --run-time 3h30m -c 2000 -r 0.1 --step-load --step-clients 100 --step-time 10m
 
-locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv= --run-time 1h -c 14 -r 0.1
-locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv= --run-time 9h -c 20 -r 0.1
-locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv= --run-time 1h -c 14 -r 0.1
+locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=fatique_1 --run-time 1h -c 14 -r 0.1
+locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=fatique_2 --run-time 9h -c 20 -r 0.1
+locust -f ./"mixed scenario"/mixed_scenario_test.py --no-web --csv=fatique_3 --run-time 1h -c 14 -r 0.1
 
